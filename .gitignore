@@ -1,0 +1,15 @@
+**/logs
+**/.pytest_cache
+**/__pycache__
+
+.git
+
+myenv/
+dist/
+build/
+AutomationFlow.egg-info
+.eggs
+
+
+setup.py
+checklist.md
