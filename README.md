@@ -10,6 +10,7 @@ Table of Contents
 - [AutomationFlow](#automationflow)
 - [Table of Contents](#table-of-contents)
 - [General Approach](#general-approach)
+- [The Runner Class](#the-runner-class)
 - [Main Rules](#main-rules)
     - [Comment block](#comment-block)
     - [Inline functions](#inline-functions)
@@ -107,7 +108,40 @@ or enter EXIT close this application
 exiting... see you next time
 ```
 
+where the file being run looks like,
+
+```
+
+from Trie import DTrie
+from AutomationFlow.AutomationFlow import Runner
+
+r = Runner(script_fpath="script.md",
+  _context = {
+    "initialize" : initialize,
+    "prefixsearch" : prefix_search,
+})
+
+r.run()
+
+```
+
 check out the examples directory for more..
+
+# The Runner Class 
+
+Arguments,
+
+script_text str
+ - The script as a text. If provided script_fpath cannot be provided.
+
+script_fpath
+ - path to the script file. If provided script_text cannot be provided.
+
+_context
+ - A dictionary with keys and values that will be reference-able within the script.
+
+print_delay=0.01
+ - Time delay between the printing of each character. 0.01 default, which is relatively fast.
 
 # Main Rules
 
