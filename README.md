@@ -4,9 +4,10 @@ A jupyter inspired automation 'language' for creating more readable (literate pr
 
 I like to use jupyter for scripting nowadays, but it's not always an option especially when in the terminal.
 
+> pip install AutomationFlow
+
 Table of Contents
 =================
-
 - [AutomationFlow](#automationflow)
 - [Table of Contents](#table-of-contents)
 - [General Approach](#general-approach)
